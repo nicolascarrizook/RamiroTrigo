@@ -62,8 +62,15 @@ h3 {
   background-color: #fff;
   color: #868484; }
 
+h2 span {
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+  background: #1f282b;
+  background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 100%);
+  vertical-align: middle; }
+
 .header {
-  width: 80%;
   height: 90vh;
   background: linear-gradient(rgba(35, 35, 35, 0.722), rgba(0, 0, 0, 0.605)), url("https://images.unsplash.com/photo-1517832606299-7ae9b720a186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80");
   background-position: center;
@@ -75,6 +82,7 @@ h3 {
   flex-wrap: nowrap;
   flex-direction: column; }
   .header .header__nav {
+    width: 90%;
     height: 5em;
     display: flex;
     justify-content: space-between;
