@@ -1,105 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Deus Barbershop</title>
 </head>
+
 <body>
     <header class="header">
-        <nav class="header__nav contenedor">
-            <div class="logo__nav">
-                <a href="">Deus</a>
-            </div>
-            <div class="boton__nav">
-                <div class="boton__navLines">
+        <nav class="contenedor">
+            <div class="gs:grid header__nav">
+                <div class="logo__nav">
+                    <a href="">Deus</a>
                 </div>
+                <div class="boton__nav">
+                    <div class="boton__navLines">
+                    </div>
+                </div>
+                <ul class="navigation__nav">
+                    <li class="navigation__element"><a href="#">Home</a></li>
+                    <li class="navigation__element"><a href="#Servicios">Servicios</a></li>
+                    <li class="navigation__element"><a href="#Testimonios">Testimonios</a></li>
+                    <li class="navigation__element"><a href="#Nosotros">Nosotros</a></li>
+                    <li class="navigation__element"><a href="#Contacto">Contacto</a></li>
+                </ul>
             </div>
-            <ul class="navigation__nav">
-                <li class="navigation__element"><a href="#">Home</a></li>
-                <li class="navigation__element"><a href="#Servicios">Servicios</a></li>
-                <li class="navigation__element"><a href="#Testimonios">Testimonios</a></li>
-                <li class="navigation__element"><a href="#Nosotros">Nosotros</a></li>
-                <li class="navigation__element"><a href="#Contacto">Contacto</a></li>
-            </ul>
         </nav>
-        <div class="header__content contenedor mb-5">
-            <div class="content__left">
-                <h2 class="left__top-title"><span></span> all you need</h5>
-                <h3 class="left__title">TO BE</h3>
-                <h3 class="left__title">A MAN</h3>
-            </div>
-            <div class="content__center">
-                <button class="btn btn__principal">Reserva un turno</button>
-            </div>
-            <div class="content__right">
-                <div class="right__info">
-                    <h4>Muñecas 386</h4>
-                    <h4>SM de Tucumán</h4>
-                    <br/>
-                    <h4>+54 9 3816 26-5265</h4>
+        <div class="header__box contenedor mb-5">
+            <div class="gs:grid header__content">
+                <div class="sm:columna-4 md:columna-12">
+                    <div class="inner__contentLeft">
+                        <h2><span></span> All you need</h2>
+                        <h1>TO BE</h1>
+                        <H1>A MAN</H1>
+                    </div>
                 </div>
-                <div>
-                    <ul class="right__rrss mt-5">
-                        <li class="rrss__icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li class="rrss__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li class="rrss__icon"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
+                <div class="sm:columna-4 md:columna-12">
+                    <div class="inner__contentCenter">
+                        <button class="btn btn__principal">Solicitar turno</button>
+                    </div>
+                </div>
+                <div class="sm:columna-4 md:columna-12">
+                    <div class="inner__contentRight">
+                        <div class="textos mb-5">
+                            <h5>Muñecas 386</h5>
+                            <h5>SM de Tucumán</h5>
+                            <br>
+                            <h5>+54 381 6265265</h5>
+                        </div>
+                        <div class="redes">
+                            <ul class="redes__listado">
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="info__banner contenedor pt-4">
-        <div class="gs:grid banner__contenedor">
-            <div class="sm:columna-5 md:columna-12  inner__content">
-                <div class="inner__content--right mb-4">
-                    <video autoplay="autoplay" loop="loop" width="100%" width="100%">
-                        <source src="assets/video.mp4" type="video/mp4"> 
-                    </video>
+
+    <!--Seccion banner-->
+
+    <section class="banner contenedor"> 
+        <div class="gs:grid">
+            <div class="sm:columna-6 md:columna-12">
+                <div class="banner__left">
+                    
                 </div>
             </div>
-            <div class="sm:columna-7 md:columna-12 inner__content">
-                <div class="inner__content--left">
-                    <h2>SERVICIOS</h2> 
-                    <p>Barbershop</p>
-                </div>
-            </div>
-        </div>
-        <div class="dots">
-            <div class="gs:grid servicios__inner">
-                <div class="sm:columna-6 md:columna-12">
-                    <h2></h2>
-                    <ul class="list">
-                        <li><span>Corte masculino</span>
-                         <span>7.95</span>
-                        <li><span>Fried Calamari</span>
-                         <span>8.95</span>
-                        <li><span>Almond Prawn Cocktail</span>
-                         <span>7.95</span>
-                        <li><span>Bruschetta</span>
-                         <span>5.25</span>
-                        <li><span>Margherita Pizza</span>
-                         <span>10.95</span>
-                    </ul>
-                </div>
-                <div class="sm:columna-6 md:columna-12">
-                    <h2></h2>
-                    <ul class="list">
-                        <li><span>Corte masculino</span>
-                         <span>7.95</span>
-                        <li><span>Fried Calamari</span>
-                         <span>8.95</span>
-                        <li><span>Almond Prawn Cocktail</span>
-                         <span>7.95</span>
-                        <li><span>Bruschetta</span>
-                         <span>5.25</span>
-                        <li><span>Margherita Pizza</span>
-                         <span>10.95</span>
-                    </ul>
+            <div class="sm:columna-6 md:columna-12">
+                <div class="banner__right">
+                    <video src="/assets/images/video.mp4" autoplay="autoplay" controls="true" loop="loop" width="250px"></video>
                 </div>
             </div>
         </div>
@@ -108,4 +89,5 @@
     <script src="./assets/js/main.js"></script>
     <script src="./libs/bootstrap/bootstrap-5.0.1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

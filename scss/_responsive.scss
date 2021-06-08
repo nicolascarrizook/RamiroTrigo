@@ -1,0 +1,9 @@
+@media screen and (min-width: 578px){
+    @include grid-system(sm\:columna);
+}
+
+
+@media screen and (max-width: 768px){
+
+    @include grid-system(md\:columna);
+}

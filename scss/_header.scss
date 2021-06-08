@@ -1,107 +1,57 @@
+/*Estilos para header*/
 .header{
-    height: 90vh;
-    background : linear-gradient( rgba(35, 35, 35, 0.722), rgba(0, 0, 0, 0.605)), url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80');
+    height: 80vh;
+    max-width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #060606, #3131314d), url('/assets/images/background.jpg');
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    @include contenedor-flexible(space-between, center, nowrap, column);
-    .header__nav {
-        width: 90%;
-        height: 5em;
-        @include contenedor-flexible(space-between, center, wrap, row);
-        .logo__nav {
-            font-size: 2em;
-            a{
-                color: white;
-            }
-        }
-        .boton__nav{
-            cursor: pointer;
-            position: relative;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            width: 1.5rem;
-            height: 1.5rem;
-            z-index: 10 !important;
-            .boton__navLines,
-            .boton__navLines::before,
-            .boton__navLines::after{
-                width: 1.5rem;
-                height: .1rem;
-                background-color: white;
-                transition: all 0.5s ease-in-out;
-            }
-            .boton__navLines::before,
-            .boton__navLines::after{
-                content: "";
-                position: absolute;
-            }
-            .boton__navLines::before{
-                transform: translateY(-0.5rem);
-            }
-            .boton__navLines::after{
-                transform: translateY(0.5rem);
-            } 
-          
-
-        }
-          /*Animaciones*/
-            .boton__nav.open .boton__navLines{
-                transform: translateX(2rem);
-                background-color: transparent;
-            }
-            .boton__nav.open .boton__navLines::before{
-                transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-            }
-            .boton__nav.open .boton__navLines::after{
-                transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-            }
-
-        .navigation__nav {
-            height: 100%;
-            margin: 0;
-            @include contenedor-flexible(space-between, center, wrap, row);
-            .navigation__element {
-                margin: 1em;
-                font-size: 1em;
-                a:hover {
-                    color: white;
-                    transition: all .8s ease;
-                }
-                .dropdown-menu .navigation__element a:hover{
-                    color: #12141D !important;
-                }
-            }
-         }
-    }
-    .header__content{
+    background-size: cover;
+    @include contenedor-flexible(space-between, space-between, wrap, column);
+    .header__nav{
+        margin-top: 2em;
         width: 100%;
-        @include contenedor-flexible(space-between, center, nowrap, row);
-        .left__top-title{
-            color: #fff;
-            font-size: 2em;
+        @include contenedor-flexible(space-between, center, wrap, row);
+        /*Navigation*/
+        .navigation__nav{
+            @include contenedor-flexible(space-around, center, wrap, row);
+            .navigation__element{
+                margin: 1em;
+                font-size: 1.2em;
+                a:hover{
+                    color: rgb(223, 223, 223);
+                    transition: all .5s ease-in-out;
+                }
+            }
         }
-        .left__title{
-            color: #fff;
-            font-weight: bolder;
-            font-size: 3em;
-        }
-        .content__right{
-            color: #fff;
-            text-align: right;
-            .right__rrss{
-                @include contenedor-flexible(space-between, center, nowrap, row);
-                .rrss__icon a, i{
+    }
+    .header__box{
+        .header__content{
+            height: 100%;
+            width: 100%;
+            @include contenedor-flexible(space-between, center, wrap, row);
+            .inner__contentLeft{
+                h2{
+                    color: #e1e1e1;
                     font-size: 1.5em;
                 }
-                .rrss__icon a:hover{
-                    color: #fff;
-                    transition: all .8s ease;
+                h1{
+                    color: white;
+                    font-weight: bolder;
                 }
             }
-            ul{
-                padding: 0;
+            .inner__contentCenter{
+                text-align: center;
+            }
+            .inner__contentRight{
+                text-align: right;
+                .textos{
+                    color: white;
+                }
+                .redes__listado{
+                    text-align: right;
+                    @include contenedor-flexible(space-around, center, wrap, row);
+                }
             }
         }
     }

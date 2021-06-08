@@ -11,7 +11,7 @@ body {
   padding: 0;
   line-height: 1.6;
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #111111; }
+  background-color: #070606; }
 
 ul {
   list-style-type: none; }
@@ -19,7 +19,7 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
-  color: #868484; }
+  color: white; }
 
 img {
   width: 80%;
@@ -63,117 +63,15 @@ h3 {
   color: #868484; }
 
 h2 span {
-  width: 30px;
+  width: 20px;
   height: 2px;
   display: inline-block;
   background: #1f282b;
   background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 100%);
   vertical-align: middle; }
 
-.header {
-  height: 90vh;
-  background: linear-gradient(rgba(35, 35, 35, 0.722), rgba(0, 0, 0, 0.605)), url("https://images.unsplash.com/photo-1517832606299-7ae9b720a186?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: column; }
-  .header .header__nav {
-    width: 90%;
-    height: 5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /*Animaciones*/ }
-    .header .header__nav .logo__nav {
-      font-size: 2em; }
-      .header .header__nav .logo__nav a {
-        color: white; }
-    .header .header__nav .boton__nav {
-      cursor: pointer;
-      position: relative;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      width: 1.5rem;
-      height: 1.5rem;
-      z-index: 10 !important; }
-      .header .header__nav .boton__nav .boton__navLines,
-      .header .header__nav .boton__nav .boton__navLines::before,
-      .header .header__nav .boton__nav .boton__navLines::after {
-        width: 1.5rem;
-        height: .1rem;
-        background-color: white;
-        transition: all 0.5s ease-in-out; }
-      .header .header__nav .boton__nav .boton__navLines::before,
-      .header .header__nav .boton__nav .boton__navLines::after {
-        content: "";
-        position: absolute; }
-      .header .header__nav .boton__nav .boton__navLines::before {
-        transform: translateY(-0.5rem); }
-      .header .header__nav .boton__nav .boton__navLines::after {
-        transform: translateY(0.5rem); }
-    .header .header__nav .boton__nav.open .boton__navLines {
-      transform: translateX(2rem);
-      background-color: transparent; }
-    .header .header__nav .boton__nav.open .boton__navLines::before {
-      transform: rotate(45deg) translate(-1.5rem, 1.5rem); }
-    .header .header__nav .boton__nav.open .boton__navLines::after {
-      transform: rotate(-45deg) translate(-1.5rem, -1.5rem); }
-    .header .header__nav .navigation__nav {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: row; }
-      .header .header__nav .navigation__nav .navigation__element {
-        margin: 1em;
-        font-size: 1em; }
-        .header .header__nav .navigation__nav .navigation__element a:hover {
-          color: white;
-          transition: all .8s ease; }
-        .header .header__nav .navigation__nav .navigation__element .dropdown-menu .navigation__element a:hover {
-          color: #12141D !important; }
-  .header .header__content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row; }
-    .header .header__content .left__top-title {
-      color: #fff;
-      font-size: 2em; }
-    .header .header__content .left__title {
-      color: #fff;
-      font-weight: bolder;
-      font-size: 3em; }
-    .header .header__content .content__right {
-      color: #fff;
-      text-align: right; }
-      .header .header__content .content__right .right__rrss {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: row; }
-        .header .header__content .content__right .right__rrss .rrss__icon a, .header .header__content .content__right .right__rrss i {
-          font-size: 1.5em; }
-        .header .header__content .content__right .right__rrss .rrss__icon a:hover {
-          color: #fff;
-          transition: all .8s ease; }
-      .header .header__content .content__right ul {
-        padding: 0; }
-
 .contenedor {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
@@ -239,31 +137,6 @@ h2 span {
 .columna-12 {
   flex: 0 0 100%;
   max-width: 100%; }
-
-@media (max-width: 420px) {
-  .header__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: space-between;
-    flex-wrap: wrap;
-    flex-direction: column !important; }
-    .header__menu ul {
-      padding: 0; }
-    .header__menu .header__logo {
-      text-align: center;
-      margin-bottom: 2em; }
-    .header__menu .navigation__elemento {
-      font-size: .8em; }
-  .header__content {
-    height: 100%;
-    flex-direction: column !important; }
-    .header__content .content__left {
-      align-self: flex-start;
-      margin-top: 20%; }
-      .header__content .content__left .left__top-title {
-        font-size: 1em; }
-    .header__content .content__right .right__info {
-      text-align: center; } }
 
 @media screen and (min-width: 578px) {
   .sm\:columna {
@@ -343,70 +216,67 @@ h2 span {
     max-width: 91.66667%; }
   .md\:columna-12 {
     flex: 0 0 100%;
-    max-width: 100%; }
-  body {
-    font-size: 12px; }
-  /*Menu*/
-  .boton__nav {
-    display: flex !important; }
-  .navigation__nav {
-    width: 100%;
-    flex-direction: column !important;
-    justify-content: space-around !important;
-    position: absolute !important;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    transform: translateY(-100vh);
-    background-color: #111111;
-    z-index: 1; }
-  .navigation__nav.open {
-    transform: translateY(0); } }
+    max-width: 100%; } }
 
-/*Info banner*/
-.info__banner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-color: #111111;
-  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%232f2f2f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"); }
-  .info__banner .banner__contenedor {
+/*Estilos para header*/
+.header {
+  height: 80vh;
+  max-width: 80%;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #060606, #3131314d), url("/assets/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .header .header__nav {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*Navigation*/ }
+    .header .header__nav .navigation__nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .header .header__nav .navigation__nav .navigation__element {
+        margin: 1em;
+        font-size: 1.2em; }
+        .header .header__nav .navigation__nav .navigation__element a:hover {
+          color: #dfdfdf;
+          transition: all .5s ease-in-out; }
+  .header .header__box .header__content {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row; }
-    .info__banner .banner__contenedor .inner__content {
-      height: 100%; }
-      .info__banner .banner__contenedor .inner__content .inner__content--left {
-        height: 100%;
-        color: white;
-        text-align: center; }
-  .info__banner .dots {
-    width: 100%;
-    background: white;
-    padding: 5em; }
-    .info__banner .dots .servicios__inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: row; }
-    .info__banner .dots ul.list {
-      max-width: 40em;
-      padding: 0;
-      overflow-x: hidden;
-      list-style: none; }
-      .info__banner .dots ul.list li:before li:before {
-        float: left;
-        width: 0;
-        white-space: nowrap;
-        content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
-      .info__banner .dots ul.list span:first-child {
-        padding-right: 0.33em;
-        background: white; }
-      .info__banner .dots ul.list span + span {
-        float: right;
-        padding-left: 0.33em;
-        background: white; }
+    .header .header__box .header__content .inner__contentLeft h2 {
+      color: #e1e1e1;
+      font-size: 1.5em; }
+    .header .header__box .header__content .inner__contentLeft h1 {
+      color: white;
+      font-weight: bolder; }
+    .header .header__box .header__content .inner__contentCenter {
+      text-align: center; }
+    .header .header__box .header__content .inner__contentRight {
+      text-align: right; }
+      .header .header__box .header__content .inner__contentRight .textos {
+        color: white; }
+      .header .header__box .header__content .inner__contentRight .redes__listado {
+        text-align: right;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row; }
